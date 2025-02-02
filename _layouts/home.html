@@ -2,8 +2,21 @@
 layout: default
 refactor: true
 ---
-
 {% include lang.html %}
+
+<!-- Customized Homepage -->
+
+<h1>章小明的个人博客</h1>
+<p>
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur ipsum magni ea nam ab neque aperiam, dignissimos
+  soluta cupiditate laudantium officiis <a href="https://zhangxm2312.github.io">Here</a> magnam minus asperiores velit
+  amet harum provident aspernatur numquam,
+</p>
+<a href="https://zhangxm2312.github.io">Here</a>
+
+<hr>
+
+<!-- Posts -->
 
 {% assign all_pinned = site.posts | where: 'pin', 'true' %}
 {% assign all_normal = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
