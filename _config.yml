@@ -14,12 +14,12 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 章小明的个人博客 # the main title
+title: 小明的局部空间 # the main title
 
-tagline: This is a tagline. # it will display as the subtitle
+tagline: A localized space for me. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  章小明的个人网页 (zhangxm2312's Personal Website)
+  章小明的个人主页 (zhangxm2312's Personal Website)
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -38,8 +38,8 @@ social:
   email: zhangxm2312@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/zhangxm2312 # change to your Twitter homepage
     - https://github.com/zhangxm2312 # change to your GitHub homepage
+    # change to your Twitter homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -61,7 +61,7 @@ analytics:
   google:
     id: # fill in your Google Analytics ID
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id: zhangxm2312 # fill in your GoatCounter ID
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
@@ -75,7 +75,7 @@ analytics:
 
 # Page views settings
 pageviews:
-  provider: # now only supports 'goatcounter'
+  provider: 'goatcounter' # now only supports 'goatcounter'
 
 # Prefer color scheme setting.
 #

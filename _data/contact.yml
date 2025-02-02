@@ -10,9 +10,34 @@
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
-- type: rss
-  icon: "fas fa-rss"
-  noblank: true
+- type: math-stack-exchange
+  icon: "fa-brands fa-stack-exchange"
+  url: "https://math.stackexchange.com/users/1046467"
+  
+- type: zhihu
+  icon: "fa-brands fa-zhihu"
+  url: "https://www.zhihu.com/people/zhangxm2312"
+
+- type: steam
+  icon: "fa-brands fa-steam"
+  url: "https://steamcommunity.com/id/zhangxm2312/"
+
+- type: bilibili
+  icon: "fa-brands fa-bilibili"
+  url: "https://space.bilibili.com/10565141"
+
+- type: qq
+  icon: "fa-brands fa-qq"
+  url: "https://qm.qq.com/q/OK2y1NtI6i"
+
+- type: chaoli
+  icon: "fa-regular fa-comment"
+  url: "https://chaoli.club/index.php/member/7228"
+
+# - type: rss
+#   icon: "fas fa-rss"
+#   noblank: true
+# 
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
