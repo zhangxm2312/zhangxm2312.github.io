@@ -5,7 +5,7 @@ author: 章小明
 date: 2025-02-02 20:48:00 +0800
 categories: [数学, 测试]
 tags: [ ]
-pin: true
+pin: false
 math: true
 mermaid: true
 ---

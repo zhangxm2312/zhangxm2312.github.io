@@ -8,3 +8,16 @@
 ';
 
 /* append your custom style below */
+
+// 外部链接显示Font Awesome图标
+// Ref: https://christianoliff.com/blog/styling-external-links-with-an-icon-in-css
+a[href^="http://"]::after, a[href^="https://"]::after {
+  content: "\f35d"; /* Font Awesome Unicode */
+  font-family: "Font Awesome 6 Free";
+  font-size: 0.6rem;
+  font-weight: 900;
+  margin-left: 4px;
+}
+a[id="social_link"]::after{
+  display: none;
+}

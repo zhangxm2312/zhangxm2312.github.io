@@ -75,7 +75,7 @@ analytics:
 
 # Page views settings
 pageviews:
-  provider: 'goatcounter' # now only supports 'goatcounter'
+  provider: "goatcounter" # now only supports 'goatcounter'
 
 # Prefer color scheme setting.
 #
@@ -107,6 +107,8 @@ social_preview_image: # string, local or CORS resources
 # boolean type, the global switch for TOC in posts.
 toc: true
 
+math: true
+
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
   provider: giscus # [disqus | utterances | giscus]
@@ -124,10 +126,10 @@ comments:
     category: "General"
     category_id: "DIC_kwDONyX6C84CmgYo"
     mapping: "title" # optional, default to 'pathname'
-    strict:  # optional, default to '0'
+    strict: # optional, default to '0'
     input_position: "top" # optional, default to 'bottom'
-    lang:  # optional, default to the value of `site.lang`
-    reactions_enabled:  # optional, default to the value of `1`
+    lang: # optional, default to the value of `site.lang`
+    reactions_enabled: # optional, default to the value of `1`
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:

@@ -5,7 +5,7 @@ author: 章小明
 date: 2025-02-02 21:54:00 +0800
 categories: [杂谈]
 tags: [主页]
-pin: true
+pin: false
 math: true
 mermaid: true
 ---
@@ -13,7 +13,7 @@ mermaid: true
 1. [Github pages](https://pages.github.com/)的官方文档: [GitHub Pages 文档](https://docs.github.com/zh/pages)
     - [使用 Jekyll 设置 GitHub Pages 站点](https://docs.github.com/zh/pages/setting-up-a-github-pages-site-with-jekyllsetting-up-a-github-pages-site-with-jekyll)
     - [配置 GitHub Pages 站点的自定义域](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site)
-2. Chirpy主题的官方文档: [Jekyll Theme Chirpy Wiki](https://github.com/cotes2020/jekyll-theme-chirpy/wiki), 
+2. Chirpy主题的官方文档: [Jekyll Theme Chirpy Wiki](https://github.com/cotes2020/jekyll-theme-chirpy/wiki), 官方指南 [Chirpy](https://chirpy.cotes.page), 以及官方指南的个人汉化版 [pansong291](https://pansong291.github.io/chirpy-demo-zhCN)
 3. 部署指南
     - [官方部署指南](https://chirpy.cotes.page/posts/getting-started/) 以及 [示例](https://chirpy.cotes.page/posts/text-and-typography/)
     - [【避坑篇】使用Github Pages搭建个人主页or博客网站【上】](https://zhuanlan.zhihu.com/p/641525444)
