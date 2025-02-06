@@ -1,11 +1,9 @@
 ---
 title: 关于GitHub Pages, Jekyll以及Chirpy模板的指南
 description: 在动手搭建本网页时找到或参考的各类指南和文档
-author: 章小明
 date: 2025-02-02 21:54:00 +0800
 categories: [杂谈]
-tags: [主页]
-pin: false
+tags: [网页]
 math: true
 mermaid: true
 ---

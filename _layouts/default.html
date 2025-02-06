@@ -38,7 +38,9 @@ layout: compress
               {% include_cached trending-tags.html lang=lang %}
 
               <!-- 友链 -->
-              {% include_cached friendly-link.html %}
+              {% if page.layout != 'post' %}
+                {% include_cached friendly-link.html %}
+              {% endif %}
             </div>
 
             {% for _include in layout.panel_includes %}

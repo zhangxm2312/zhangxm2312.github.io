@@ -15,7 +15,7 @@ a[href^="http://"]::after, a[href^="https://"]::after {
   content: "\f35d"; /* Font Awesome Unicode */
   font-family: "Font Awesome 6 Free";
   font-size: 0.6rem;
-  font-weight: 900;
+  font-weight: 900;  /* Lighter version is a Pro Icon */
   margin-left: 4px;
 }
 a[id="social_link"]::after{

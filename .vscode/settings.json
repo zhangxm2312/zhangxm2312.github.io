@@ -29,5 +29,9 @@
   },
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[liquid]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid",
+    "editor.formatOnSave": false
   }
 }

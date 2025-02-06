@@ -32,7 +32,7 @@
 
       {% assign link = share.link | replace: 'TITLE', title | replace: 'URL', url %}
 
-      <a href="{{ link }}" target="_blank" rel="noopener" {{ tooltip }}>
+      <a href="{{ link }}" target="_blank" rel="noopener" id="social_link" {{ tooltip }}>
         <i class="fa-fw {{ share.icon }}"></i>
       </a>
     {% endfor %}

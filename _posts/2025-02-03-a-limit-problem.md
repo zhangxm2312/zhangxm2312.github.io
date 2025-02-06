@@ -1,0 +1,61 @@
+---
+title: 一道极限题
+description: 
+date: 2025-02-03 21:12:00 +0800
+categories: [数学, 杂题]
+tags: [数学, 分析]
+math: true
+mermaid: true
+---
+## 题目
+计算极限：
+
+$$I=\lim_{n\to\infty}\frac{\sum_{k=1}^n n^k}{\sum_{k=1}^n k^n}$$
+
+## 证明1 (估阶)
+
+首先上下同除$n^n$得到
+
+$$I=\lim_{n\to\infty} \frac{n^{1-n}+n^{2-n}+\cdots+1}{(1/n)^n+(2/n)^n+\cdots+1}$$
+
+这时上下都化作有界量，更容易估计了。分子项
+
+$$a_n=n\sum_{k=1}^{n} n^{-k}=\frac{n-n^{1-n}}{n-1}\to 1$$
+
+因此若能计算出分母项的极限即可求得。而分母项
+
+$$b_n=\sum_{k=1}^{n}\left(\frac{k}{n}\right)^n$$
+
+中的领头项
+
+$$\left(\frac{n-k}{n}\right)^n=\left(1-\frac{k}{n}\right)^n\to\mathrm{e}^{-k}$$
+
+因此可首先估计$\left(1-\frac{k}{n}\right)^n$的阶：由于$n\to\infty$时
+
+$$n\log\left(1-\frac{k}{n}\right)=-k-\frac{k^2}{2n}+O(n^{-2})$$
+
+因此
+
+$$\left(1-\frac{k}{n}\right)^n=\exp\left(-k-\frac{k^2}{2n}+O(n^{-2})\right)=\mathrm{e}^{-k}\left(1-\frac{k^2}{2n}+O(n^{-2})\right)O(n^{-2})=\mathrm{e}^{-k}-\mathrm{e}^{-k}\frac{k^2}{2n}+O(n^{-2})$$
+
+从而
+
+$$\sum_{k=0}^{n-1} \mathrm{e}^{-k} - b_n = \sum_{k=1}^{n-1} \left(\mathrm{e}^{-k} -  \left(1-\frac{k}{n}\right)^n \right)=\sum_{k=1}^{n-1} \left( \mathrm{e}^{-k}\frac{k^2}{2n}+O(n^{-2}) \right)\leq \sum_{k=1}^\infty \mathrm{e}^{-k}\frac{k^2}{2n}+O(1/n)=\frac{\mathrm{e}^2+\mathrm{e}}{(2\mathrm{e}-1)^3n}+O(1/n)\to 0$$
+
+从而
+
+$$\lim_{n\to\infty}b_n=\sum_{k=0}^\infty \mathrm{e}^{-k}=\frac{\mathrm{e}}{\mathrm{e}-1}, I=\lim_{n\to \infty}\frac{a_n}{b_n}=\frac{\lim_{n\to \infty} a_n}{\lim_{n\to \infty} b_n}=\frac{\mathrm{e}-1}{\mathrm{e}}=1-\mathrm{e}^{-1}$$
+
+## 证明2 (Stolz定理)
+
+下记$A_n=\sum_{k=1}^n n^k, B_n=\sum_{k=1}^n k^n$,即计算$I=\lim_{n\to\infty}\frac{A_n}{B_n}$.显然$A_n\to\infty, B_n\to\infty$,则可应用Stolz定理:
+
+$$I=\lim_{n\to\infty}\frac{A_{n+1}-A_n}{B_{n+1}-B_n}$$
+
+下分别计算差分:
+
+$$A_{n+1}-A_n=\sum_{k=1}^{n+1}(n+1)^k - \sum_{k=1}^n n^k=(n+1)^{n+1}+\sum_{k=1}^n [(n+1)^k-n^k]= \mathrm{e}\cdot n^{n+1}+O(n^n) \quad (n\to \infty)$$
+
+$$B_{n+1}-B_n=\sum_{k=1}^{n+1} k^{n+1} - \sum_{k=1}^n k^n=(n+1)^{n+1}+\sum_{k=1}^n [k^{n+1}-k^n]$$
+
+(TBC)
