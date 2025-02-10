@@ -9,6 +9,24 @@ layout: compress
 
 MathJax = { 
   loader: {load: ['[tex]/ams', '[tex]/configmacros']},
+  startup: {
+    ready() {
+      {%- comment -%} Adjust the default script scaling parameters {%- endcomment -%}
+      const math = MathJax._.core.MmlTree.MmlNodes.math.MmlMath;
+      math.defaults.scriptminsize = '12px';
+      math.defaults.scriptsizemultiplier = .8;
+
+      {%- comment -%} Create the usual MathJax objects {%- endcomment -%}
+      MathJax.startup.defaultReady();
+
+      {%- comment -%} Add a TeX jax pre-filter to add \displaystyle{...} around in-line material {%- endcomment -%}
+      MathJax.startup.document.inputJax[0].preFilters.add((data) => {
+        if (!data.math.display) {
+          data.math.math = '\\displaystyle{' + data.math.math + '}';
+        }
+      });
+    }
+  },
   tex: {
     {% comment %} extensions to use {% endcomment %}
     packages: {'[+]': ['base', 'ams','physics', 'newcommand', 'configmacros']},
@@ -105,22 +123,4 @@ MathJax = {
       "lhs": "\\operatorname{LHS}",
       "rhs": "\\operatorname{RHS}"
     }
-},
-startup: {
-  ready() {
-    {%- comment -%} Adjust the default script scaling parameters {%- endcomment -%}
-    const math = MathJax._.core.MmlTree.MmlNodes.math.MmlMath;
-    math.defaults.scriptminsize = '12px';
-    math.defaults.scriptsizemultiplier = .8;
-    
-    {%- comment -%} Create the usual MathJax objects {%- endcomment -%}
-    MathJax.startup.defaultReady();
-    
-    {%- comment -%} Add a TeX jax pre-filter to add \displaystyle{...} around in-line material {%- endcomment -%}
-    MathJax.startup.document.inputJax[0].preFilters.add((data) => {
-      if (!data.math.display) {
-        data.math.math = '\\displaystyle{' + data.math.math + '}';
-      }
-    });
-  }
 } };
