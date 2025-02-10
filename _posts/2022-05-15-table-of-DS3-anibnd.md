@@ -9,4 +9,4 @@ mermaid: true
 published: false
 ---
 
-Ref: [黑暗之魂3NPC与`.anibnd.dcx`文件对应表](https://www.bilibili.com/opus/660516380434497620)
+[Ref](https://www.bilibili.com/opus/660516380434497620).
