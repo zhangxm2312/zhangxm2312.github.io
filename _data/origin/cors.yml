@@ -52,5 +52,5 @@ clipboard:
   js: https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js
 
 mathjax:
-  # js: https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js
-  js: /assets/lib/mathjax/tex-chtml.js
+  js: https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js
+  # js: /assets/lib/mathjax/tex-chtml.js

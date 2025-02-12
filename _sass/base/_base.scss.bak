@@ -500,8 +500,6 @@ mjx-container {
   }
 }
 
-/* --- animation --- */
-
 @function random_range($min, $max) {
   $rand: math.random();
   $random_range: $min + math.floor($rand * (($max - $min) + 1));
