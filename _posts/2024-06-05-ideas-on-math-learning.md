@@ -1,9 +1,9 @@
 ---
 title: 数学学习方法的整理与想法
-description: 
+description: https://chaoli.club/index.php/10321/
 date: 2024-06-05 16:52:00 +0800
-categories: [存档]
-tags: [存档]
+categories: [杂谈]
+tags: [数学,杂谈,存档]
 math: true
 ---
 
@@ -175,6 +175,3 @@ math: true
 > 个人认为使用LaTeX整理的这部分时间是垃圾时间...如果你当做复习的时间那也好，但是在LaTeX上打太多教科书上的公式对我来说是一种折磨，思维都消耗在公式怎么用LaTeX打出来上了，真正对内容的思考反而不多
 
 更多是复习和整理思路。其实这样的总结性笔记应该不会写太多公式，而更多是大段的自然语言和footnote。另外对（大段文字的）内容的思考我会打字记在手写笔记或pdf批注上。
-
-
-[Ref](https://chaoli.club/index.php/10321/)

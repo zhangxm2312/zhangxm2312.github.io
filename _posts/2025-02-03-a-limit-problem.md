@@ -2,8 +2,8 @@
 title: 一道极限题
 description: 
 date: 2025-02-03 21:12:00 +0800
-categories: [数学, 杂题]
-tags: [数学, 分析]
+categories: [数学]
+tags: [数学, 杂题]
 math: true
 mermaid: true
 ---

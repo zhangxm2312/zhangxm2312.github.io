@@ -2,8 +2,8 @@
 title: 使用Chirpy模板撰写文章的技巧
 description: 使用中一些需要注意的地方
 date: 2025-02-03 20:15:00 +0800
-categories: [杂谈]
-tags: [网页]
+categories: [计算机, 主页]
+tags: [网站]
 ---
 
 ## 文章的头信息(Front Matter)
@@ -69,7 +69,7 @@ cdn: url # 只能作为img的根目录,所以对我作用不大
 
 我用了`<iframe>`在网站中内嵌pdf文件,一般是如下形式：
 
-```markdown
+```html
 <iframe 
     src="https://cdn.jsdelivr.net/gh/user/repo@version/file/"
     frameborder="0" width="100%" height="600px">

@@ -1,9 +1,9 @@
 ---
-title: 数学学习方法的整理与想法
-description: 
-date: 2024-06-05 16:52:00 +0800
-categories: [存档]
-tags: [存档]
+title: 关于本人数学学习的历史、现状和问题
+description: https://chaoli.club/index.php/9695
+date: 2024-01-14 03:40:14 +0800
+categories: [杂谈]
+tags: [数学,杂谈,存档]
 math: true
 ---
 
@@ -94,6 +94,3 @@ math: true
 6. 运筹学：手算单纯形法，痛苦面具。老师是商院院长，但只找其他老师或博士生代课。
 7. 环与模范畴：听说期中才讲一大半环论，评价为水。
 8. 现代偏微分方程选讲：同微分流形，选了但被取消了，原因是没人选。
-
-
-[Ref](https://chaoli.club/index.php/9695).

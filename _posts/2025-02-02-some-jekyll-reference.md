@@ -2,8 +2,8 @@
 title: 关于GitHub Pages, Jekyll以及Chirpy模板的指南
 description: 在动手搭建本网页时找到或参考的各类指南和文档
 date: 2025-02-02 21:54:00 +0800
-categories: [杂谈]
-tags: [网页]
+categories: [计算机]
+tags: [网站]
 math: true
 mermaid: true
 ---

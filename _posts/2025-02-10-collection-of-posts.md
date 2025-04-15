@@ -1,17 +1,11 @@
 ---
-title: 创作内容汇总存档
+title: 历史发言汇总存档
 description: 
-date: 2025-02-10 21:12:00 +0800
+date: 2022-01-01 00:00:00 +0800
 categories: [存档]
 tags: [存档]
-published: false
+published: true
 ---
-
-## 资源分享
-
-- [一些电子版数学教材的目录修正](https://chaoli.club/index.php/7666)
-- [【分享】数学手册(1999,科学出版社)](https://chaoli.club/index.php/8028)
-- [针对AS和ASD的《PEERS青年社交技巧训练》笔记](https://chaoli.club/index.php/7048)
 
 ## 数学
 

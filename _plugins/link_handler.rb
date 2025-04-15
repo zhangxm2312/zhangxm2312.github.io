@@ -22,32 +22,34 @@ module Kramdown
   end
 end
 
-module Jekyll
-  class LinkHandler < Generator
-    def generate(site)
-      site.posts.docs.each do |post|
-        post.content = process_content(post.content)
-      end
-    end
+# module Jekyll
+#   class LinkHandler < Generator
+#     def generate(site)
+#       site.posts.docs.each do |post|
+#         post.content = process_content(post.content)
+#       end
+#     end
 
-    private
+#     private
 
-    def process_content(content)
-      lines = content.split("\n")
+#     def process_content(content)
+#       lines = content.split("\n")
       
-      lines.map do |line|
-        # 跳过包含图片的行（包括Markdown格式和HTML格式）
-        next line if line.match?(/!\[.*?\]\(.*?\)/) || line.match?(/<img[^>]+>/i)
-        # 跳过已经是Markdown链接的行
-        next line if line.match?(/\[.+?\]\(.+?\)/)
-        # 跳过包含HTML链接的行
-        next line if line.match?(/<a\s.*?>.*?<\/a>/)
+#       lines.map do |line|
+#         # 跳过包含图片的行（包括Markdown格式和HTML格式）
+#         next line if line.match?(/!\[.*?\]\(.*?\)/) || line.match?(/<img[^>]+>/i)
+#         # 跳过包含 iframe 标签的行（包括 src 属性）
+#         next line if line.match?(/<iframe[^>]*src=["'][^"']*["'][^>]*>/i)
+#         # 跳过已经是Markdown链接的行
+#         next line if line.match?(/\[.+?\]\(.+?\)/)
+#         # 跳过包含HTML链接的行
+#         next line if line.match?(/<a\s.*?>.*?<\/a>/)
         
-        # 处理独立的URL
-        line.gsub(/(?<![\[!])\b(https?:\/\/[^\s<>\[\]()'"]+)(?!\))/) do |url|
-          "<a href=\"#{url}\" target=\"_blank\">#{url}</a>"
-        end
-      end.join("\n")
-    end
-  end
-end
+#         # 处理独立的URL
+#         line.gsub(/(?<![\[!])\b(https?:\/\/[^\s<>\[\]()'"]+)(?!\))/) do |url|
+#           "<a href=\"#{url}\" target=\"_blank\">#{url}</a>"
+#         end
+#       end.join("\n")
+#     end
+#   end
+# end
