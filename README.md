@@ -1,4 +1,5 @@
 # 小明的局部空间
+
 基于[Jekyll Chirpy Theme](https://github.com/cotes2020/jekyll-theme-chirpy)的个人主页(建设中...)
 
 目前正在修改网站细节以及搬运既往资料.
@@ -11,14 +12,13 @@
    - Adjust 404 page
    - Add "Source" and "Raw" link buttons in article's header
    - Add progress back to back-to-top button
-2.  ([ref](https://github.com/NOS-AE/NOS-AE.github.io).)
-3. Upgrade Search and fix the bug that `\` disabled `simple-jekyll-search` ([ref](https://ittousei.github.io/posts/customize-my-blog/).)
-4. Customized MathJax configuration: 
+2. Upgrade Search and fix the bug that `\` disabled `simple-jekyll-search` ([ref](https://ittousei.github.io/posts/customize-my-blog/).)
+3. Customized MathJax configuration:
    - Customized tex `\newcommand` as new macros
    - defaults to `\displaystyle` mode
    - fix the bug inline math are not rendered ([ref](https://github.com/cotes2020/jekyll-theme-chirpy/issues/2246).)
-5. Add external link symbol
+4. Add external link symbol
    - not shown after icons
-6. Add friendly links
+5. Add friendly links
    - not shown on post pages
-7. Add Giscus ([ref](https://ittousei.github.io/posts/customize-my-blog/).)
+6. Add Giscus ([ref](https://ittousei.github.io/posts/customize-my-blog/).)
