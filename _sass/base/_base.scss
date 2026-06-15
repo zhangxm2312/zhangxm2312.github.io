@@ -139,6 +139,7 @@ main {
     background-size: 0% 1px;
     background-repeat: no-repeat;
     transition: background-size 0.36s, background-position 0s 0.36s;
+
     &:hover {
       background-position: 100% 100%;
       background-size: 100% 1px;
@@ -484,6 +485,7 @@ mjx-container {
     @media (min-width: 1200px) {
       max-width: 1280px;
     }
+
     @media (min-width: 1400px) {
       max-width: 1400px;
     }
@@ -510,10 +512,11 @@ mjx-container {
 
 /* --- animation --- */
 
-@function random_range($min, $max) {
+@function random-range($min, $max) {
   $rand: math.random();
-  $random_range: $min + math.floor($rand * (($max - $min) + 1));
-  @return $random_range;
+  $random-range: $min + math.floor($rand * (($max - $min) + 1));
+
+  @return $random-range;
 }
 
 #animation {
@@ -531,6 +534,7 @@ mjx-container {
       opacity: 1;
       border-radius: 0;
     }
+
     100% {
       transform: translateY(-1200px) rotate(720deg);
       opacity: 0;
@@ -555,11 +559,11 @@ mjx-container {
 
       @for $i from 0 through 50 {
         &:nth-child(#{$i}) {
-          --circle-left: #{random_range(0%, 100%)};
-          --circle-background: rgba(#{random_range(0, 255)}, #{random_range(0, 255)}, #{random_range(0, 255)}, 0.06);
-          --circle-side-length: #{random_range(20px, 200px)};
-          --circle-time: #{random_range(10s, 45s)};
-          --circle-delay: #{random_range(0s, 25s)};
+          --circle-left: #{random-range(0%, 100%)};
+          --circle-background: rgba(#{random-range(0, 255)}, #{random-range(0, 255)}, #{random-range(0, 255)}, 0.06);
+          --circle-side-length: #{random-range(20px, 200px)};
+          --circle-time: #{random-range(10s, 45s)};
+          --circle-delay: #{random-range(0s, 25s)};
         }
       }
     }
